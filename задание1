@@ -1,0 +1,14 @@
+#Задание1
+class Employee:
+    def __init__(self, name, title, experience):
+        self.name = name
+        self.title = title
+        self.experience = experience
+
+    def get_experience_bonus(self):
+        if self.experience < 5:
+            return 0.05
+        elif 5 <= self.experience < 10:
+            return 0.10
+        else:
+            return 0.15
