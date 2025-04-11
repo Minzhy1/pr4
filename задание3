@@ -1,0 +1,25 @@
+#вариант4
+from abc import ABC, abstractmethod
+
+class Worker(ABC):
+    @abstractmethod
+    def work(self):
+        pass
+
+    @abstractmethod
+    def rest(self):
+        pass
+
+class Programmer(Worker):
+    def work(self):
+        return "Программист пишет код."
+
+    def rest(self):
+        return "Программист отдыхает во сне."
+
+class Designer(Worker):
+    def work(self):
+        return "Дизайнер творит красоту."
+
+    def rest(self):
+        return "Дизайнер отдыхает, творя красоту."
